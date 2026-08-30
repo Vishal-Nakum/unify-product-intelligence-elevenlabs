@@ -1,0 +1,27 @@
+Conversation Transcript:
+
+Agent: I am Eric, your Taskflow health monitor. I can help you with user feedback, support ticket analysis and key product metrics. Let me know what you are interested in today?
+User: I'm interested in, uh, support ticket summary for August 2026.
+Agent: In August 2026, the top support ticket categories were Mobile with one hundred seventeen tickets, Performance with one hundred ten tickets, and Usability with sixty-eight tickets. Mobile and Performance categories had a high number of high or critical risk tickets, eighty-eight and eighty-one respectively. The average resolution times for these categories ranged from approximately twenty-five to forty hours. Would you like to dig deeper into this, or ask about something else?
+
+User: ...
+Agent: Would you...
+User: Give me comparison with, uh, uh, January to, uh, February 2026 for the support tickets.
+Agent: I do not have access to data prior to June 2026. I can provide you with information from June, July, and August 2026. Would you like to know about those months instead?
+User: Yes, please go ahead.
+Agent: From June to August 2026, Mobile and Performance consistently remained the top two categories for support tickets. Mobile tickets increased from seventy-nine in June to ninety-eight in July, and further to one hundred seventeen in August. Similarly, Performance tickets rose from eighty-one in June to one hundred two in July, and one hundred ten in August. The number of high or critical risk tickets also saw an increase in these categories over the three months. Would you like to dig deeper into this, or ask about something else?
+
+User: Uh, no, give me summary for, uh, product metrics.
+Agent: Which product metrics are you interested in? I can provide data on free to paid conversion percentage, NPS, monthly active users, mobile active users, retention thirty day percentage, average session minutes, and ninety-five percentile API latency in milliseconds. Please specify the metric and the time period you'd like to examine.
+User: Uh, give me, uh, free to paid conversion metrics for, uh, January 2026.
+Agent: I do not have data for January 2026. I can provide data from June, July, and August 2026. Would you like to know about those months instead?
+User: Yes, give me comparison as well.
+Agent: The free to paid conversion rate was eleven point two percent in June 2026, eleven point two percent in July 2026, and then decreased to eight point four percent in August 2026. Would you like to dig deeper into this, or ask about something else?
+
+User: Give me user feedback to, uh, for, for the conversion for, uh, free to paid.
+Agent: I cannot directly link user feedback to conversion rates. I can provide general user feedback based on categories like Usability, Performance, Billing, etc., or specific feedback sources like NPS surveys or app reviews. Would you like to explore feedback in those areas?
+User: Uh, give me the feedbacks, uh, which have affected the free-to-paid conversion in August 2026.
+Agent: I cannot directly link specific feedback to the free-to-paid conversion rate. My data allows me to provide feedback based on categories, sentiment, and source, but not to directly correlate it with conversion metrics. Would you like to know about general feedback trends in August 2026, or perhaps feedback related to specific categories like billing or usability?
+User: No, give me a general overview of the feedbacks 2026.
+Agent: In 2026, feedback was primarily gathered through app reviews, interviews, in-app submissions, and NPS surveys. Common themes included usability issues like "too many steps to create a task," performance concerns such as "project loading is slow," and billing confusion. Sentiments ranged from negative to passive, with usability and performance being frequent topics of concern. Would you like to dig deeper into this, or ask about something else?
+User: No, fine. Thank you. I'm done with it.
