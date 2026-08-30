@@ -1,0 +1,238 @@
+{
+  "version": "1.0",
+  "description": "Standalone ElevenLabs tool definitions used by the Unify Product Intelligence agent.",
+  "tools": [
+    {
+      "tool_id": "tool_3501m0myjazbfg1tw4vg5rmyxjy2",
+      "type": "webhook",
+      "name": "query_support_tickets",
+      "description": "Query support ticket from the Support Tickets API. Use this tool whenever the user asks about support ticket summary for a specified time period.",
+      "response_timeout_secs": 20,
+      "disable_interruptions": false,
+      "interruption_mode": "allow",
+      "force_pre_tool_speech": false,
+      "pre_tool_speech": "auto",
+      "assignments": [],
+      "tool_call_sound": null,
+      "tool_call_sound_behavior": "auto",
+      "tool_error_handling_mode": "auto",
+      "dynamic_variables": {
+        "dynamic_variable_placeholders": {}
+      },
+      "execution_mode": "immediate",
+      "api_schema": {
+        "request_headers": {},
+        "kind": "webhook",
+        "url": "https://errant-magazine-streak.ngrok-free.dev/api/v1/support/query",
+        "method": "POST",
+        "path_params_schema": {},
+        "query_params_schema": null,
+        "request_body_schema": {
+          "description": "The Support ticket summary to retrieve. Convert the user's natural-language request get details supported by the Support ticket API.",
+          "dynamic_variable": "",
+          "is_omitted": false,
+          "type": "object",
+          "required": [],
+          "properties": {
+            "start_month": {
+              "type": "string",
+              "description": "Start month in YYYY-MM format only, e.g. 2026-08. Do NOT include a day. Omit this field entirely if the user hasn't specified a start month",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            },
+            "end_month": {
+              "type": "string",
+              "description": "End month in YYYY-MM format only, e.g. 2026-08. Do NOT include a day. Omit this field entirely if the user hasn't specified a start month",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            },
+            "category": {
+              "type": "string",
+              "description": "Category of the support ticket. Omit this parameter entirely if not specified by the user — do not send an empty string.",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            },
+            "priority": {
+              "type": "string",
+              "description": "Priority of the support ticket. Omit this parameter entirely if not specified by the user — do not send an empty string.",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            },
+            "churn_risk": {
+              "type": "string",
+              "description": "Churn risk of the account corresponding to this support ticket. Omit this parameter entirely if not specified by the user — do not send an empty string.",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            },
+            "account_id": {
+              "type": "string",
+              "description": "Account Id of the support ticket creator. Omit this parameter entirely if not specified by the user — do not send an empty string.",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            }
+          }
+        },
+        "response_body_schema": null,
+        "response_filter": null,
+        "content_type": "application/json",
+        "auth_resolved_params": [],
+        "auth_connection": null
+      }
+    },
+    {
+      "tool_id": "tool_7201m18ntzhtfk6aeq5xhdks5bh1",
+      "type": "webhook",
+      "name": "support_august_summary",
+      "description": "Query support ticket from the Support Tickets API. Use this tool whenever the user asks about support ticket summary for a specifically for august 2026.",
+      "response_timeout_secs": 20,
+      "disable_interruptions": false,
+      "interruption_mode": "allow",
+      "force_pre_tool_speech": false,
+      "pre_tool_speech": "auto",
+      "assignments": [],
+      "tool_call_sound": null,
+      "tool_call_sound_behavior": "auto",
+      "tool_error_handling_mode": "auto",
+      "dynamic_variables": {
+        "dynamic_variable_placeholders": {}
+      },
+      "execution_mode": "immediate",
+      "api_schema": {
+        "request_headers": {},
+        "kind": "webhook",
+        "url": "https://errant-magazine-streak.ngrok-free.dev/api/v1/support/august-summary",
+        "method": "POST",
+        "path_params_schema": {},
+        "query_params_schema": null,
+        "request_body_schema": {
+          "description": "The Support ticket summary to retrieve for August 2026 only. Convert the user's natural-language request get details supported by the Support ticket API.",
+          "dynamic_variable": "",
+          "is_omitted": false,
+          "type": "object",
+          "required": [],
+          "properties": {
+            "request_id": {
+              "type": "string",
+              "description": "This is an optional parameter. No parameter is required to call or execute webhook. Omit this parameter entirely — do not send an empty string.",
+              "enum": null,
+              "is_system_provided": false,
+              "dynamic_variable": "",
+              "allowed_values_dynamic_variable": "",
+              "constant_value": "",
+              "is_omitted": false
+            }
+          }
+        },
+        "response_body_schema": null,
+        "response_filter": null,
+        "content_type": "application/json",
+        "auth_resolved_params": [],
+        "auth_connection": null
+      }
+    },
+    {
+      "tool_id": "tool_6301m0m07y3qfb9v634kkw06x8k8",
+      "type": "webhook",
+      "name": "query_product_metrics",
+      "description": "Query product health metrics from the Product Metrics API. Use this tool whenever the user asks about product metrics, KPIs, conversion, activation, retention, revenue, usage, or other product performance measurements for a specified time period.",
+      "disable_interruptions": false,
+      "interruption_mode": "allow",
+      "force_pre_tool_speech": false,
+      "pre_tool_speech": "auto",
+      "tool_call_sound": null,
+      "tool_call_sound_behavior": "auto",
+      "tool_error_handling_mode": "auto",
+      "execution_mode": "immediate",
+      "api_schema": {
+        "url": "https://errant-magazine-streak.ngrok-free.dev/api/v1/product-metrics/query",
+        "method": "POST",
+        "path_params_schema": [],
+        "query_params_schema": [],
+        "request_body_schema": {
+          "id": "body",
+          "type": "object",
+          "description": "The product metric to retrieve. Convert the user's natural-language metric request to the metric identifier supported by the Product Metrics API.",
+          "properties": [
+            {
+              "id": "metric",
+              "type": "string",
+              "value_type": "llm_prompt",
+              "description": "The product metric to retrieve. Convert the user's natural-language metric request to the metric identifier supported by the Product Metrics API. For free-to-paid conversion, use free_to_paid_conversion_pct.",
+              "dynamic_variable": "",
+              "constant_value": "",
+              "enum": [
+                "free_to_paid_conversion_pct",
+                "nps",
+                "monthly_active_users",
+                "mobile_active_users",
+                "retention_30d_pct",
+                "avg_session_minutes",
+                "p95_api_latency_ms"
+              ],
+              "is_system_provided": false,
+              "required": true
+            },
+            {
+              "id": "start_month",
+              "type": "string",
+              "value_type": "llm_prompt",
+              "description": "Start month of the requested period in YYYY-MM-DD format. Use the first day of the month.",
+              "dynamic_variable": "",
+              "constant_value": "",
+              "enum": null,
+              "is_system_provided": false,
+              "required": true
+            },
+            {
+              "id": "end_month",
+              "type": "string",
+              "value_type": "llm_prompt",
+              "description": "End month of the requested period in YYYY-MM-DD format. Use the first day of the month.",
+              "dynamic_variable": "",
+              "constant_value": "",
+              "enum": null,
+              "is_system_provided": false,
+              "required": true
+            }
+          ],
+          "required": false,
+          "dynamic_variable": "",
+          "value_type": "llm_prompt"
+        },
+        "request_headers": [],
+        "content_type": "application/json",
+        "auth_connection": null
+      },
+      "assignments": [],
+      "response_timeout_secs": 20,
+      "dynamic_variables": {
+        "dynamic_variable_placeholders": {}
+      },
+      "response_mocks": []
+    }
+  ]
+}
