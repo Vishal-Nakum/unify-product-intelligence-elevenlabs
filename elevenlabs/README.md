@@ -28,6 +28,13 @@ analyst agents and retrieve data through backend APIs.
                                       between 3 specialized agents, groundness,
                                       reliability.
                                       
+`Support_Ticket_Knowledge_Base.txt`  Knowledge base for Support Ticket Analyst
+                                     agent. It has summary of support tickets.
+
+`Customer_Feedback_Knowledge_Base.docx`  Knowledge base for Customer Feedback Analyst agent.
+                                       It has customer feedbacks in JSON format.
+
+                                      
 ------------------------------------------------------------------------
 
 ## 1. `agent.json`
